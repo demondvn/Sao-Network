@@ -141,4 +141,4 @@ Xem số block đã sync hiện tại:
 ## Build 
         docker build . -t sao-network
 ## Run
-        docker run -d --name sao-network --restart unless-stopped -e NODE_NAME="MonPham" sao-network
+        docker run -d --name sao-network -v /mnt/blockstore/sao-network/:/root/.sao --restart unless-stopped -e NODE_NAME="MonPham" sao-network
