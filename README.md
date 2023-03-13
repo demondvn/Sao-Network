@@ -137,3 +137,8 @@ Xem số block đã sync hiện tại:
 
     saod status 2>&1 | jq .SyncInfo.latest_block_height
 
+# Docker build
+## Build 
+        docker build . -t sao-network
+## Run
+        docker run -d --name sao-network --restart unless-stopped -e NODE_NAME="MonPham" sao-network
